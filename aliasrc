@@ -1,0 +1,30 @@
+#!/bin/sh
+alias l='exa'
+alias ls='exa -ls name'
+alias la='exa -la'
+alias cd..='cd ..'
+alias cls='clear'
+alias cat='bat'
+
+alias pacmna='pacman'
+alias pacnam='pacman'
+
+alias unlock="sudo rm /var/lib/pacman/db.lck"
+alias update="sudo yay -Syyu"
+
+alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+
+alias unmount="umount"
+alias sn="shutdown now"
+alias sr="sudo reboot"
+
+alias vim="nvim"
+alias py3="python3"
+alias wget="wget -c"
+alias pg="ping -c 3 archlinux.org"
+
+#Haxor things
+alias thm="sudo openvpn /home/wolfy/hax/THM/WoLfY.ovpn"
+alias htb="sudo openvpn /home/wolfy/hax/HTB/WoLfYHUN.ovpn"
+alias harvester="cd /home/wolfy/hax/theHarvester/ && python3 theHarvester.py"
+alias sherlock="cd  /home/wolfy/hax/sherlock && python3 sherlock"

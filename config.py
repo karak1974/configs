@@ -1,6 +1,4 @@
-
 from typing import List  # noqa: F401
-
 from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Screen
 from libqtile.lazy import lazy
@@ -67,11 +65,10 @@ for i in groups:
 
 layouts = [
     #layout.Stack(num_stacks=2),
-    # Try more layouts by unleashing below layouts.
     layout.Bsp(
         border_focus="#1793d1",
         border_normal="#333333",
-        margin=7,
+        margin=5,
         border_width=3,
     ),
     #layout.Colums(),
@@ -82,6 +79,7 @@ layouts = [
         border_width=3,
     ),
     layout.Max(),
+    #layout.Stack(num_stacks=2),
     #layout.MonadTall(),
     #layout.MonadWide(),
     #layout.RatioTile(),
@@ -152,6 +150,7 @@ screens = [
                 widget.CPU(
                     background="#333333",
                     foreground="#1793d1",
+                    format='{freq_current}GHz {load_percent}%',
                 ),
                 widget.TextBox(
                     text='|',
