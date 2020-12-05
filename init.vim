@@ -1,6 +1,7 @@
 source $HOME/.config/nvim/dov_mutatta.vim
 source $HOME/.config/nvim/airl.vim
 source $HOME/.config/nvim/rainbow.vim
+source $HOME/.config/nvim/coc_conf.vim
 
 let mapleader =","
 
@@ -27,6 +28,7 @@ Plug 'eslint/eslint'
 Plug 'tc50cal/vim-terminal'
 Plug 'vim-scripts/Conque-Shell'
 Plug 'vim-python/python-syntax'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 set go=a

@@ -8,7 +8,7 @@ mod = "mod4"
 terminal = guess_terminal()
 
 keys = [
-    
+
     Key([mod], "j", lazy.layout.down()),
     Key([mod], "k", lazy.layout.up()),
     Key([mod], "h", lazy.layout.left()),
@@ -68,15 +68,15 @@ layouts = [
     layout.Bsp(
         border_focus="#1793d1",
         border_normal="#333333",
-        margin=5,
+        margin=0,
         border_width=3,
     ),
     #layout.Colums(),
     layout.Matrix(
         border_focus="#1793d1",
         border_normal="#333333",
-        margin=5,
-        border_width=3,
+        margin=3,
+        border_width=2,
     ),
     layout.Max(),
     #layout.Stack(num_stacks=2),
@@ -103,7 +103,7 @@ screens = [
                 #widget.CurrentLayout(
                 #    background="#333333",
                 #    foreground="#1793d1",
-                #), 
+                #),
                 widget.GroupBox(
                     active="#1793d1",
                     borderwidht=1,
@@ -136,25 +136,12 @@ screens = [
                     background="#333333",
                     foreground="#1793d1",
                 ),
-                #widget.Net(
-                #    format='{down}↓↑{up}',
-                #    background="#333333",
-                #    foreground="#1793d1",
-                #),
-                #widget.TextBox(
-                #    text='|',
-                #    fontsize=10,
-                #    background="#333333",
-                #    foreground="#1793d1",
-                #),
                 widget.CPU(
                     background="#333333",
                     foreground="#1793d1",
                     format='{freq_current}GHz {load_percent}%',
                 ),
-                widget.TextBox(
-                    text='|',
-                    fontsize=12,
+                widget.ThermalSensor(
                     background="#333333",
                     foreground="#1793d1",
                 ),
@@ -168,18 +155,8 @@ screens = [
                     background="#333333",
                     foreground="#1793d1",
                 ),
-                widget.ThermalSensor(
-                    background="#333333",
-                    foreground="#1793d1",
-                ),
-                widget.TextBox(
-                    text='|',
-                    fontsize=12,
-                    background="#333333",
-                    foreground="#1793d1",
-                ),
                 widget.Battery(
-                        format="{char} {percent:2.0%}",
+                    format="{char} {percent:2.0%}",
                     background="#333333",
                     foreground="#1793d1",
                 ),
@@ -195,6 +172,9 @@ screens = [
                     foreground="#1793d1",
                 ),
                 widget.QuickExit(
+                    countdown_format="[ {} ⏼ ]",
+                    countdown_start=5,
+                    default_text="[ ⏻ ]",
                     background="#333333",
                     foreground="#1793d1",
                 ),

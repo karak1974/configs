@@ -21,9 +21,7 @@ BLUE="\e[94m"
 GREEN="\e[92m"
 STOP="\e[0m"
 
-#export PS1= printf "${BLUE}" "[" printf "${GREEN}" "$USER" printf "${BLUE}" "]" printf "${STOP}"
-export PS1="\[$(tput bold)\]\[$(tput setaf 1)\][\[$(tput setaf 1)\] WoLfY ] \[$(tput sgr0)\]"
-
+export PS1="\[$(tput bold)\]\e[94m[ WoLfY ]\e[0m"
 # Load shortcut aliases
 [ -f "$HOME/.config/shortcutrc" ] && source "$HOME/.config/shortcutrc"
 

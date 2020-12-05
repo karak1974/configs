@@ -15,4 +15,3 @@ nm-applet &
 setxkbmap -model pc104 -layout hu &
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 xrandr --auto
-
