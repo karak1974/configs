@@ -64,21 +64,21 @@ for i in groups:
     ])
 
 layouts = [
+    layout.Max(),
     #layout.Stack(num_stacks=2),
     layout.Bsp(
         border_focus="#1793d1",
         border_normal="#333333",
-        margin=0,
+        margin=15,
         border_width=3,
     ),
     #layout.Colums(),
     layout.Matrix(
         border_focus="#1793d1",
         border_normal="#333333",
-        margin=3,
+        margin=10,
         border_width=2,
     ),
-    layout.Max(),
     #layout.Stack(num_stacks=2),
     #layout.MonadTall(),
     #layout.MonadWide(),
@@ -172,8 +172,8 @@ screens = [
                     foreground="#1793d1",
                 ),
                 widget.QuickExit(
-                    countdown_format="[ {} ⏼ ]",
-                    countdown_start=5,
+                    countdown_format="[ {} ]",
+                    countdown_start=8,
                     default_text="[ ⏻ ]",
                     background="#333333",
                     foreground="#1793d1",
