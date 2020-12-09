@@ -3,6 +3,7 @@ from libqtile import bar, layout, widget
 from libqtile.config import Click, Drag, Group, Key, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
+import iwlib
 
 mod = "mod4"
 terminal = guess_terminal()
@@ -64,7 +65,6 @@ for i in groups:
     ])
 
 layouts = [
-    layout.Max(),
     #layout.Stack(num_stacks=2),
     layout.Bsp(
         border_focus="#1793d1",
@@ -72,6 +72,7 @@ layouts = [
         margin=15,
         border_width=3,
     ),
+    layout.Max(),
     #layout.Colums(),
     layout.Matrix(
         border_focus="#1793d1",
@@ -131,7 +132,7 @@ screens = [
                     foreground="#1793d1",
                 ),
                 widget.TextBox(
-                    text="|",
+                    text="  ",
                     fontsize=15,
                     background="#333333",
                     foreground="#1793d1",
@@ -141,7 +142,19 @@ screens = [
                     foreground="#1793d1",
                     format='{freq_current}GHz {load_percent}%',
                 ),
+                widget.TextBox(
+                    text="  ",
+                    fontsize=12,
+                    background="#333333",
+                    foreground="#1793d1",
+                ),
                 widget.ThermalSensor(
+                    background="#333333",
+                    foreground="#1793d1",
+                ),
+                widget.TextBox(
+                    text="  ",
+                    fontsize="12",
                     background="#333333",
                     foreground="#1793d1",
                 ),
@@ -150,7 +163,7 @@ screens = [
                     foreground="#1793d1",
                 ),
                 widget.TextBox(
-                    text='|',
+                    text="  ",
                     fontsize=12,
                     background="#333333",
                     foreground="#1793d1",
@@ -161,7 +174,7 @@ screens = [
                     foreground="#1793d1",
                 ),
                 widget.TextBox(
-                    text="|",
+                    text="  ",
                     fontsize=12,
                     background="#333333",
                     foreground="#1793d1",

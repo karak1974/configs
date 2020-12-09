@@ -3,3 +3,4 @@ setxkbmap -model pc104 -layout hu &
 nitrogen --restore &
 #nm-applet &
 numlockx on &
+picom -b
