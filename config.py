@@ -111,6 +111,11 @@ screens = [
                     background="#202020",
                     foreground="#1793d1",
                 ),
+                widget.Cmus(
+                    play_color="#00609E",
+                    background="#202020",
+                    foreground="#1793d1",
+                ),
                 widget.TextBox(
                     text="",
                     padding=-2,
