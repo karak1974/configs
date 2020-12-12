@@ -6,6 +6,7 @@ alias la='exa -la'
 alias al='exa -la'
 alias cd..='cd ..'
 alias cls='clear'
+alias rm="rm -rf"
 
 alias pacmna='pacman'
 alias pacnam='pacman'
@@ -26,7 +27,9 @@ alias py3="python3"
 alias wget="wget -c"
 alias pg="ping -c 3 -t 1 archlinux.org"
 
-#Haxor things
+alias alacritty="alacritty -t wolfy@archlinux"
+
+#Haxor thingz
 alias thm="sudo openvpn /home/wolfy/hax/THM/WoLfY.ovpn"
 alias htb="sudo openvpn /home/wolfy/hax/HTB/WoLfYHUN.ovpn"
 alias harvester="cd /home/wolfy/hax/theHarvester/ && python3 theHarvester.py"
