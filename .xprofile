@@ -1,6 +1,10 @@
 #!/bin/sh
 setxkbmap -model pc104 -layout hu &
 nitrogen --restore &
-#nm-applet &
 numlockx on &
-picom -b
+xcompmgr -c &
+xsetroot -cursor_name left_ptr &
+setxkbmap -model pc104 -layout hu &
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+/usr/bin/sensor.sh
